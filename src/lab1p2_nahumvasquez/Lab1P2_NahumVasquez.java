@@ -4,16 +4,20 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Lab1P2_NahumVasquez {
-
+// Mi filita bonita es la 2 y en la bonita columna 4
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size;
         System.out.println("Ingrese el tamanio de matriz deseado: ");
         size = sc.nextInt();
-        crearMatriz(size);
-        imprimirMatriz(crearMatriz(size));
-        
-        
+        int[][] nuevaMatriz = crearMatriz(size);
+        imprimirMatriz(nuevaMatriz);
+        int[][] ordenada = bubbleSort(nuevaMatriz);
+        System.out.println("LA NUEVA MATRIZ ORDENADA ES: ");
+        imprimirMatriz(ordenada);
+
+
     }
 
     // METODOS
@@ -41,8 +45,8 @@ public class Lab1P2_NahumVasquez {
     public static int[][] bubbleSort(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
-                if (matriz[i][j] > matriz[i][j + 1]) {
-                    matriz[i][j] = matriz[i][j + 1];
+                if (matriz[i][j] > matriz[i][j+1]) {
+                    matriz[i][j] = matriz[i][j+1];
                 }
 
             }
