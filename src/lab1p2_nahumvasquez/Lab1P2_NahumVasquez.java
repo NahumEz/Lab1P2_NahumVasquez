@@ -13,8 +13,10 @@ public class Lab1P2_NahumVasquez {
         crearMatriz(size);
         imprimirMatriz(crearMatriz(size));
         
+        
     }
 
+    // METODOS
     public static int[][] crearMatriz(int x) {
         Random rand = new Random();
         int[][] matriz = new int[x][x];
@@ -25,14 +27,27 @@ public class Lab1P2_NahumVasquez {
         }
         return matriz;
     }
-    public static int [][] imprimirMatriz(int [][] matrizgenerada){
-         for (int i = 0; i < matrizgenerada.length; i++ ){
-            for (int j = 0; j < matrizgenerada[i].length; j++){
-                System.out.print("["+matrizgenerada[i][j]+"]");
+
+    public static int[][] imprimirMatriz(int[][] matrizgenerada) {
+        for (int i = 0; i < matrizgenerada.length; i++) {
+            for (int j = 0; j < matrizgenerada[i].length; j++) {
+                System.out.print("[" + matrizgenerada[i][j] + "]");
             }
             System.out.println("");
         }
-         return matrizgenerada;
+        return matrizgenerada;
     }
 
+    public static int[][] bubbleSort(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                if (matriz[i][j] > matriz[i][j + 1]) {
+                    matriz[i][j] = matriz[i][j + 1];
+                }
+
+            }
+        }
+        return matriz;
+    }
+     
 }
