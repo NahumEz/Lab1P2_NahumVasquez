@@ -16,7 +16,7 @@ public class Lab1P2_NahumVasquez {
         int[][] ordenada = bubbleSort(nuevaMatriz);
         System.out.println("LA NUEVA MATRIZ ORDENADA ES: ");
         imprimirMatriz(ordenada);
-
+    }// nunca vi matrices
     }
 
     // METODOS
@@ -49,7 +49,7 @@ public class Lab1P2_NahumVasquez {
                 }
 
             }
-        }
+        } //
         return matriz; // Nunca vi matricez
     }
      // NUNCA VI MATRICEZ
