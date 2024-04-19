@@ -44,9 +44,9 @@ public class Lab1P2_NahumVasquez {
 
     public static int[][] bubbleSort(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
-                if (matriz[i][j] > matriz[i][j+1]) {
-                    matriz[i][j] = matriz[i][j+1];
+            for (int j = 0; j < matriz.length ; j++) {
+                if (matriz[i][j] > matriz[i][j]) {
+                    matriz[i][j] = matriz[i][j];
                 }
 
             }
