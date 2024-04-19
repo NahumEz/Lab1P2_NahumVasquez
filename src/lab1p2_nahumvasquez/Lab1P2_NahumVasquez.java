@@ -17,7 +17,6 @@ public class Lab1P2_NahumVasquez {
         System.out.println("LA NUEVA MATRIZ ORDENADA ES: ");
         imprimirMatriz(ordenada);
 
-
     }
 
     // METODOS
@@ -45,8 +44,8 @@ public class Lab1P2_NahumVasquez {
     public static int[][] bubbleSort(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length ; j++) {
-                if (matriz[i][j] > matriz[i][j]) {
-                    matriz[i][j] = matriz[i][j];
+                if (matriz[i][0] > matriz[i][0+1]) {
+                    matriz[i][0] = matriz[i][0+1];
                 }
 
             }
