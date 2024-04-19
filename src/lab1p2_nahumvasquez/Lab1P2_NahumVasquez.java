@@ -40,7 +40,7 @@ public class Lab1P2_NahumVasquez {
         }
         return matrizgenerada;
     }
-
+//Nunca vi matricez
     public static int[][] bubbleSort(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length ; j++) {
