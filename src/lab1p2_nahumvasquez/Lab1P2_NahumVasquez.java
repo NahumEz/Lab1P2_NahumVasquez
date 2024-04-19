@@ -50,7 +50,7 @@ public class Lab1P2_NahumVasquez {
 
             }
         }
-        return matriz;
+        return matriz; // Nunca vi matricez
     }
-     
+     // NUNCA VI MATRICEZ
 }
