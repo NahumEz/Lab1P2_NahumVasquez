@@ -9,6 +9,7 @@ public class Lab1P2_NahumVasquez {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size;
+        // NUCA VI MATRIECEZ
         System.out.println("Ingrese el tamanio de matriz deseado: ");
         size = sc.nextInt();
         int[][] nuevaMatriz = crearMatriz(size);
